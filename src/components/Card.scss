@@ -1,0 +1,64 @@
+.container {
+
+    .card {
+        width: 150px;
+        height: 200px;
+        border: 1px solid black;
+        border-radius: 8px;
+        padding: 8px;
+        cursor: pointer;
+        position: relative;
+        user-select: none;
+        background-color: rgb(250, 250, 250);
+        // box-shadow: 10px 5px 5px rgba(0, 0,0, 0.25);
+        -webkit-backface-visibility: hidden;
+
+        &.card-color {
+            &-red {
+                color: red;
+            }
+
+            &-black {
+                color: black;
+            }
+        }
+
+        .top-left {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        .bottom-right {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+
+        .pattern {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            white-space: pre-wrap;
+            font-size: 40px;
+            line-height: 34px;
+            text-align: center;
+        }
+
+        .suit-rank {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            align-items: center;
+            padding: 4px;
+
+            font-size: 24px;
+            line-height: 26px;
+        }
+    }
+}
